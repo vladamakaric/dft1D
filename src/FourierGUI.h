@@ -6,7 +6,6 @@
 
 
 class FourierGUI{
-	
 	bool recompute;
 	DSControl dscontrol;
 	DFourier *dfourier;
