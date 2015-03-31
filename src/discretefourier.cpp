@@ -39,10 +39,8 @@ DFourier::DFourier(std::vector<double> &inputPoints, double period) : period(per
 double DFourier::getY(double x){
 	double y = 0;
 	double angularFreq = (2 * PI) / period;
-
 	
-	
-	for (int i = 0; i < nPoints - nPoints/2; i++){
+	for (int i = 0; i < nPoints; i++){
 		y += amplitudes[i] * cos(angularFreq*i*x - phaseShifts[i]);
 	}
 

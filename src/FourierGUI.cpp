@@ -12,6 +12,7 @@ void FourierGUI::draw(SDL_Renderer* gRenderer){
 		delete dfourier;
 		dfourier = new DFourier(dscontrol.points, SCREEN_WIDTH);
 	}
+
 	recompute = false;
 
 	int npoints = dscontrol.points.size();
